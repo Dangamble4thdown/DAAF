@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diambrosta Fantasy Football League (DFFL)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #ffcc00;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #282828;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav button {
+            background-color: #ffcc00;
+            color: #1e1e1e;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #ffaa00;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        #video-container {
+            display: none;
+            margin-top: 2rem;
+        }
+        iframe {
+            width: 80%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        #standings {
+            margin-top: 2rem;
+        }
+        #league-news {
+            margin-top: 2rem;
+            text-align: left;
+            padding: 1rem;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+        .matchup {
+            margin-bottom: 2rem;
+        }
+        #rules {
+            margin-top: 2rem;
+        }
+        .document-container iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+    </style>
+    <script>
+        function showVideo() {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.style.display = 'block';
+            const video = document.getElementById('league-video');
+            video.src += "&autoplay=1&mute=0";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Diambrosta Fantasy Football League (DFFL)
+    </header>
+
+    <nav>
+        <button onclick="showVideo()">League News</button>
+        <button onclick="showVideo()">Standings</button>
+        <button onclick="showVideo()">Waiver Wire</button>
+        <button onclick="document.getElementById('rules-section').scrollIntoView({behavior: 'smooth'})">Rules</button>
+    </nav>
+
+    <main>
+        <p>Welcome to the official page of the Diambrosta Fantasy Football League (DFFL). Click on the menu options to explore the latest updates and features!</p>
+
+        <div id="video-container">
+            <iframe id="league-video" src="https://www.youtube.com/embed/37-AlmNdESg?si=RKJlEYo4Jmpwdrqg" allow="autoplay; encrypted-media"></iframe>
+        </div>
+
+        <section id="standings">
+            <h2>Standings</h2>
+            <img src="https://media-hosting.imagekit.io//629bb9038e9549b6/Screenshot%202024-12-10%20170202.png?Expires=1734041324&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=QaA~yYCeADupqjjzBqK08csTltlpPmvjk5p3pyW-5eu1LT8q0BCVFo2ITumIkgRJbX~iaVv9sTi-VaZ7P3bx1~0pAz0aCp~S1JwOHft7v0pmlOr-p3Z49dUpMZtRJ-t6zX~zRT9Nef19mzStNiFh4iGWdbPzYSRowLGwz8ZZGyLppPz1-L6Ev3Eu8up6eAGPJynAURwRopoa-EHgITJMYWedC8w1H5r50EcneCjY1SRPVuvLxQWSO6jgKJJOfohWVOgAkPjFA9rJCiLVJKelSE7yQfsp9ltElvyvsOXdfWbp1NB28khwIf7VBaPqP50q53XT0Whvn7BKqThHCGuI3w__" alt="DFFL Standings">
+        </section>
+
+        <section id="league-news">
+            <h2>League News</h2>
+            <h3>Week 14 Matchup Summaries</h3>
+
+            <div class="matchup">
+                <h4>Never Gonna Gibbs You Up (Grade: C) vs. Joey's Scary Team (Grade: B+)</h4>
+                <p><strong>Summary:</strong> Joey's Scary Team narrowly clinched victory with consistent performances from Patrick Mahomes and Saquon Barkley. "Never Gonna Gibbs You Up" struggled with lineup optimization, leaving crucial points on the bench. Jahmyr Gibbs underperformed, adding to their woes.</p>
+                <p><strong>Room for Improvement:</strong> Joey's Scary Team could bolster their FLEX options, while "Never Gonna Gibbs You Up" needs to optimize bench management and improve quarterback consistency.</p>
+            </div>
+
+            <div class="matchup">
+                <h4>MCDC (Grade: A) vs. Never Give Up Warriors (Grade: C-)</h4>
+                <p><strong>Summary:</strong> MCDC dominated with stellar performances from Josh Allen and Tyreek Hill. Their depth at running back and wide receiver proved too strong for the "Never Give Up Warriors," who lacked depth and failed to capitalize on matchups.</p>
+                <p><strong>Room for Improvement:</strong> MCDC should focus on tightening up bench contributions, while "Never Give Up Warriors" need significant depth improvements to compete in future matchups.</p>
+            </div>
+
+            <div class="matchup">
+                <h4>Domenic's Daring Team (Grade: D) vs. Run CMC (Grade: A-)</h4>
+                <p><strong>Summary:</strong> Run CMC secured a convincing win with standout performances from Ja'Marr Chase and Kyren Williams. Domenic's Daring Team struggled with multiple injuries and poor FLEX performance, sealing their defeat.</p>
+                <p><strong>Room for Improvement:</strong> Run CMC could strengthen their bench to prepare for playoff challenges, while Domenic's Daring Team must address injuries and scout for waiver wire talent.</p>
+            </div>
+
+            <h3>Playoff Predictions</h3>
+            <p><strong>Favorites:</strong> MCDC and Run CMC have demonstrated consistent dominance, with deep rosters and balanced scoring potential.</p>
+            <p><strong>Dark Horse:</strong> Joey's Scary Team could surprise with their star-studded lineup, but consistency will be the key.</p>
+            <p><strong>Prediction:</strong> MCDC to edge out Run CMC in the finals with strategic play and high player ceilings.</p>
+        </section>
+
+        <section id="rules">
+            <h2>Rules</h2>
+            <div class="document-container">
+                <iframe src="https://1drv.ms/w/s!Aha5gfMHtl29jD2anlN4uZNdRBYr?e=reieYp" title="DFFL Rules Document"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
